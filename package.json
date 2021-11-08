@@ -1,10 +1,11 @@
 {
   "name": "smoove",
   "version": "1.0.0",
-  "description": "### Structure - index.html - styles     - css     - scss - public     - img     - fonts     - ... - script     - index.js",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass styles/scss:styles/css"
   },
   "repository": {
     "type": "git",
