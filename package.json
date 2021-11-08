@@ -1,0 +1,22 @@
+{
+  "name": "smoove",
+  "version": "1.0.0",
+  "description": "### Structure - index.html - styles     - css     - scss - public     - img     - fonts     - ... - script     - index.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeoIsRecursive/smoove.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NeoIsRecursive/smoove/issues"
+  },
+  "homepage": "https://github.com/NeoIsRecursive/smoove#readme",
+  "devDependencies": {
+    "sass": "^1.43.4"
+  }
+}
