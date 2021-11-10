@@ -37,9 +37,22 @@ body{
             }
         }
     }
-    
+
     section{
         scroll-snap-align: start;
         height:100vh;
+
+        &.info{
+            display:grid;
+            grid-template-areas: 'img1 bigText bigText''img2 info1 info2';
+            grid-auto-columns: auto 1fr 1fr;
+            align-items: center;
+            img:last-of-type{
+                grid-area:img2;
+            }
+            h3 {
+                grid-area: bigText;
+            }
+        }
     }
 }
