@@ -53,5 +53,15 @@ body{
     section{
         scroll-snap-align: start;
         height:100vh;
+
+        &.three-split{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-rows: 1fr;
+
+            .split{
+                height: 100%;
+            }
+        }
     }
 }
