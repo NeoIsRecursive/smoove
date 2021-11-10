@@ -61,6 +61,8 @@ body{
 
             .split{
                 height: 100%;
+            }
+        }
         &.info{
             display:grid;
             grid-template-areas: 'img1 bigText bigText''img2 info1 info2';
