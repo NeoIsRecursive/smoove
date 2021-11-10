@@ -54,7 +54,6 @@ body{
         scroll-snap-align: start;
         height:100vh;
 
-<<<<<<< HEAD
         &.three-split{
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -62,7 +61,6 @@ body{
 
             .split{
                 height: 100%;
-=======
         &.info{
             display:grid;
             grid-template-areas: 'img1 bigText bigText''img2 info1 info2';
@@ -73,7 +71,6 @@ body{
             }
             h3 {
                 grid-area: bigText;
->>>>>>> d0e543ea02d4f3da7fcfa24d834a7b8225bc517c
             }
         }
     }
