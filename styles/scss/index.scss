@@ -22,26 +22,10 @@ body{
         padding: 25px 35px;
         z-index: 2;
         transition: all .3s linear;
-
-        .search{
-            display: inline-block;
-        }
-
-        .search-white{
-            display: none;
-        }
+        color: white;
 
         &.scrolled{
             background: rgba(0,0,0, .6);
-            color: white;
-
-            .search{
-                display: none;
-            }
-    
-            .search-white{
-                display: inline-block;
-            }
         }
 
         .logo{
@@ -96,6 +80,7 @@ body{
                 top: 50%;
                 left: 40px;
                 transform: translate(0, -50%);
+                color: white;
 
                 .hero-title{
                     font-size: 60px;
