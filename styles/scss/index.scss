@@ -1,3 +1,5 @@
+@import "./fonts.scss";
+
 *{
     padding:0;
     margin:0;
@@ -29,7 +31,9 @@ body{
         }
 
         .logo{
-
+            font-family: "Broadway";
+            text-transform: uppercase;
+            font-size: 45px;
         }
 
         nav{
