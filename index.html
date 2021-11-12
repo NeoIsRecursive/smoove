@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="logo">LOGO PLACEHOLDER</div>
         <nav>
             <ul class="nav-list">
@@ -19,7 +19,10 @@
                 <li class="nav-item">Menu item 2</li>
                 <li class="nav-item">Menu item 3</li>
                 <li class="nav-item">Menu item 4</li>
-                <li class="nav-item search"><img src="public/img/search.svg" alt="Search"></li>
+                <li class="nav-item search">
+                    <img class="search-white" src="public/img/search-white.svg" alt="Search">
+                    <img class="search" src="public/img/search.svg" alt="Search">
+                </li>
             </ul>
         </nav>
     </header>
@@ -33,9 +36,9 @@
                 </div>
                 <button class="hero-button">CTA</button>
             </div>
-            <div class="down-button"></div>
+            <a href="#info" class="down-button"></a>
         </section>
-        <section class="info">
+        <section class="info" id="info">
             <img src="https://via.placeholder.com/470x300" alt="">
             <h3>Geely is bringing car driving to the next level. We are on the go for the future.</h3>
             <img src="https://via.placeholder.com/470x300" alt="">
@@ -84,5 +87,6 @@
         <section style="background-color: aqua;"></section>
         <section style="background-color: aqua;"></section>
     </main>
+    <script src="/js/index.js"></script>
 </body>
 </html>
