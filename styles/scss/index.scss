@@ -61,6 +61,27 @@ body{
 
             .split{
                 height: 100%;
+                position: relative;
+
+                .split-title{
+                    position: absolute;
+                    bottom: 50px;
+                    left: 60px;
+                    font-size: 39px;
+                    font-weight: bold;
+                }
+
+                .split-text{
+                    position: absolute;
+                    top: 45px;
+                    left: 60px;
+                    font-size: 32px;
+                    font-weight: bold;
+                }
+
+                img{
+                    width: 100%;
+                }
             }
         }
         &.info{
