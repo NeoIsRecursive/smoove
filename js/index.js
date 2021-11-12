@@ -10,8 +10,8 @@ window.addEventListener('scroll', () => {
 
 //Remove anchor links (#) from url.
 window.addEventListener("DOMContentLoaded", function(e) {
-var links = document.getElementsByTagName("A");
-    for(var i=0; i < links.length; i++) {
+    const links = document.getElementsByTagName("A");
+    for(let i=0; i < links.length; i++) {
         if(!links[i].hash) continue;
         if(links[i].origin + links[i].pathname != self.location.href) continue;
         (function(anchorPoint) {
@@ -22,11 +22,3 @@ var links = document.getElementsByTagName("A");
         })(document.getElementById(links[i].hash.replace(/#/, "")));
     }
 }, false);
-
-document.addEventListener( 'DOMContentLoaded', function() {
-    var splide = new Splide( '.splide', {
-        type: "loop",
-        pagination: false
-    } );
-    splide.mount();
-} );
