@@ -46,16 +46,7 @@ body{
                     margin: 0 10px;
                     text-transform: uppercase;
                     cursor: pointer;
-
-                    &.search{
-                        display: flex;
-                        align-items: center;
-
-                        img{
-                            width: 24px;
-                            height: 24px;
-                        }
-                    }
+                    padding: 0 20px;
 
                     &.active{
                         font-weight: 700;
@@ -141,7 +132,6 @@ body{
                 gap:1em;
                 column-gap: 50px;
                 padding: 80px 67px;
-                background-color: blue;
                 img:last-of-type{
                     grid-area:img2;
                 }
@@ -252,13 +242,20 @@ body{
         }
 
         &.image-slider{
-            padding: 0 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            img{
-                width: 100%;
-            }
+        }
+    }
+
+    footer{
+        background: black;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            font-weight: bold;
+            font-size: 120px;
+            color: white;
         }
     }
 }
