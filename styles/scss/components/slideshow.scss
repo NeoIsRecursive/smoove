@@ -1,0 +1,19 @@
+.image-slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    .slideshow-container{
+        .slideshow{
+            margin: 0 auto;
+            .slideshow-list{
+                .slide{
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}

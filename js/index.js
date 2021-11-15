@@ -22,3 +22,11 @@ window.addEventListener("DOMContentLoaded", function(e) {
         })(document.getElementById(links[i].hash.replace(/#/, "")));
     }
 }, false);
+
+new Splide("#slideshow", {
+    cover: true,
+    heightRatio: 0.5,
+    width: "2000px",
+    type: "loop",
+    pagination: false
+}).mount();
