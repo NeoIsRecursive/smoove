@@ -21,7 +21,18 @@
                 <li class="nav-item active">Our car</li>
                 <li class="nav-item">About us</li>
                 <li class="nav-item">Contact</li>
-                <li class="nav-item"><img id="language" src="/public/img/globe.svg" alt=""></li>
+                <li class="nav-item nav-item-relative">
+                    <img id="language" src="/public/img/globe.svg" alt="">
+                    <div class="language-box">
+                        <img class="arrow-up" src="/public/img/arrow-up.svg" alt="">
+                        <h4>Choose language</h4>
+                        <select name="lang" id="lang-switcher">
+                            <option value="swe">Swedish | Svenska</option>
+                            <option value="eng">English | Engelska</option>
+                        </select>
+                        <button id="lang-save">Save</button>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>

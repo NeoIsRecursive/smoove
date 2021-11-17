@@ -1,4 +1,7 @@
 let header = document.getElementById('header');
+let langButton = document.querySelector("#language");
+let langSaveButton = document.querySelector("#lang-save");
+let langBox = document.querySelector(".language-box");
 
 window.addEventListener('scroll', () => {
     if(window.scrollY > 50){
@@ -22,6 +25,14 @@ window.addEventListener("DOMContentLoaded", function(e) {
         })(document.getElementById(links[i].hash.replace(/#/, "")));
     }
 }, false);
+
+langButton.addEventListener("click", () => {
+    langBox.classList.toggle("show");
+})
+
+langSaveButton.addEventListener("click", () => {
+    langBox.classList.remove("show");
+})
 
 new Splide("#slideshow", {
     cover: true,

@@ -51,6 +51,43 @@ body{
                     &.active{
                         font-weight: 700;
                     }
+
+                    &.nav-item-relative{
+                        position: relative;
+
+                        .language-box{
+                            position: absolute;
+                            color: black;
+                            background: white;
+                            right: 10px;
+                            top: 50px;
+                            padding: 20px;
+                            width: 201px;
+                            cursor: auto;
+                            display: none;
+
+                            &.show{
+                                display: inline-block;
+                            }
+
+                            select{
+                                padding: 3px 5px;
+                                margin: 10px 0;
+                            }
+
+                            button{
+                                padding: 7px 25px;
+                                border: none;
+                                cursor: pointer;
+                            }
+
+                            .arrow-up{
+                                position: absolute;
+                                right: 12px;
+                                top: -18px;
+                            }
+                        }
+                    }
                 }
             }
         }
