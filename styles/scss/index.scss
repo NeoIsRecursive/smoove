@@ -178,6 +178,11 @@ body{
                 gap:1em;
                 column-gap: 50px;
                 padding: 80px 67px;
+
+                .info-title{
+                    font-weight: 300;
+                }
+
                 img:last-of-type{
                     grid-area:img2;
                 }
