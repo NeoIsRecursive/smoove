@@ -45,10 +45,11 @@ new Splide("#slideshow", {
 new Splide("#small-slideshow", {
     heightRatio: 0.5,
     //cover: true,
-    //type: "loop",
+    type: "loop",
     pagination: false,
     perPage: 2,
     gap: "40%",
     fixedHeight: "100%",
+    perMove: 1
     //width: "100%"
 }).mount();
