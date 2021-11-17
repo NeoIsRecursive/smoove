@@ -48,7 +48,7 @@ new Splide("#small-slideshow", {
     //type: "loop",
     pagination: false,
     perPage: 2,
-    gap: "400px",
+    gap: "40%",
     fixedHeight: "100%",
     //width: "100%"
 }).mount();
