@@ -12,9 +12,8 @@ html{
 }
 
 body{
-
     scroll-snap-type: y mandatory;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', 'Inter', sans-serif;
 
     header{
         position: fixed;
@@ -82,27 +81,23 @@ body{
                 left: 40px;
                 transform: translate(0, -50%);
                 color: white;
-                font-family: "Broadway";
                 text-transform: uppercase;
 
                 .hero-title{
                     font-size: 60px;
+                    font-weight: 800;
+                }
 
-                    .hero-normal{
-                        font-weight: normal;
-                    }
-
-                    .hero-bold{
-                        font-weight: bold;
-                    }
+                .hero-text{
+                    padding-top: 20px;
                 }
 
                 .hero-button{
                     font-size: 20px;
-                    padding: 6px 84px;
+                    padding: 15px 54px;
                     border: none;
-                    background-color: white;
-                    margin-top: 40px;
+                    background-color: #70FFD4;
+                    margin-top: 30px;
                     cursor: pointer;
                 }
             }
@@ -118,6 +113,18 @@ body{
                 width: 50px;
                 height: 50px;
                 cursor: pointer;
+            }
+        }
+
+        &.big-img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                padding: 40px 20px;
+                object-fit: cover;
+                max-width: calc(90% + 40px);
             }
         }
 
@@ -184,6 +191,15 @@ body{
                     object-fit: cover;
                     object-position: center;
                 }
+            }
+        }
+
+        &.small-slideshow{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .slideshow-container{
+                padding: 40px 0 40px 60px;
             }
         }
 

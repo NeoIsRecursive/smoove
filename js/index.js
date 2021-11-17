@@ -30,3 +30,14 @@ new Splide("#slideshow", {
     type: "loop",
     pagination: false
 }).mount();
+
+new Splide("#small-slideshow", {
+    heightRatio: 0.5,
+    //cover: true,
+    //type: "loop",
+    pagination: false,
+    perPage: 2,
+    gap: "400px",
+    fixedHeight: "100%",
+    //width: "100%"
+}).mount();
