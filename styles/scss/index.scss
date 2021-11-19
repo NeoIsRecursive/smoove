@@ -281,6 +281,46 @@ body{
                     object-fit: cover;
                     object-position: center;
                 }
+
+                &.grid-split{
+                    background: #0E1013;
+                    color: white;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(4, 1fr);
+
+                    .grid-split-item{
+                        border-bottom: 1px solid white;
+                        padding: 20px 30px;
+
+                        &:last-of-type{
+                            border: none;
+                        }
+
+                        p{
+                            font-size: 32px;
+                            color: #70FFD4;
+
+                            img{
+                                height: 21px;
+                                width: 21px;
+                            }
+                        }
+
+                        .grid-split-text{
+                            font-size: 80px;
+                            font-weight: 300;
+
+                            .small{
+                                font-size: 25px;
+                            }
+
+                            .converted{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
             }
         }
 
