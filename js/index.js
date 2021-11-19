@@ -36,7 +36,7 @@ langSaveButton.addEventListener("click", () => {
     langBox.classList.remove("show");
 })
 
-new Splide("#slideshow", {
+let slideshow = new Splide("#slideshow", {
     cover: true,
     heightRatio: 0.5,
     width: "2000px",
@@ -44,7 +44,7 @@ new Splide("#slideshow", {
     pagination: false
 }).mount();
 
-new Splide("#small-slideshow", {
+let smallSlideshow = new Splide("#small-slideshow", {
     heightRatio: 0.5,
     //cover: true,
     type: "loop",
@@ -52,8 +52,20 @@ new Splide("#small-slideshow", {
     perPage: 2,
     gap: "40%",
     fixedHeight: "100%",
-    perMove: 1
-    //width: "100%"
+    perMove: 1,
+    //width: "100%",
+    //fixedWidth: "60%"
+}).mount();
+
+let mobileSlideshow = new Splide("#mobile-slideshow", {
+    heightRatio: 0.5,
+    cover: true,
+    type: "loop",
+    pagination: false,
+    perPage: 1,
+    perMove: 1,
+    width: "100%",
+    height: "60vh"
 }).mount();
 
 hamburger.addEventListener("click", () => {

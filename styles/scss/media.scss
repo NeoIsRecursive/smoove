@@ -1,5 +1,31 @@
 // ==START TABLET==
 // #region
+@media screen and (max-width: 1200px) {
+    section{
+        &.small-slideshow{
+
+            .slideshow-container{
+                padding: 0 !important;
+
+                #small-slideshow{
+                    display: none !important;
+                }
+
+                #mobile-slideshow{
+                    display: block !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    section:not(.hero){
+        min-height: unset;
+    }
+    
+}
+
 @media screen and (max-width: 768px) {
     section{
         &.half-split{
@@ -19,6 +45,14 @@
         &.three-split{
             grid-template-columns: 1fr !important;
             grid-template-rows: repeat(3, 1fr) !important;
+        }
+
+        &.big-img{
+            img{
+                padding: 0 !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
         }
     }
 }
