@@ -1,6 +1,6 @@
 let header = document.getElementById('header');
 let langButton = document.querySelector("#language");
-let langSaveButton = document.querySelector("#lang-save");
+let langSaveButtons = document.querySelectorAll('.language-box ul li');
 let langBox = document.querySelector(".language-box");
 let hamburger = document.querySelector(".hamburger");
 let mobileNavClose = document.querySelector("#close");
@@ -32,8 +32,10 @@ langButton.addEventListener("click", () => {
     langBox.classList.toggle("show");
 })
 
-langSaveButton.addEventListener("click", () => {
-    langBox.classList.remove("show");
+langSaveButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        langBox.classList.toggle("show");
+    })
 })
 
 let slideshow = new Splide("#slideshow", {

@@ -113,32 +113,25 @@ body{
                             color: black;
                             background: white;
                             right: 10px;
-                            top: 50px;
-                            padding: 20px;
-                            width: 201px;
+                            top: 40px;
+                            //padding: 20px;
                             cursor: auto;
                             display: none;
+                            border-radius: 14px;
 
                             &.show{
                                 display: inline-block;
                             }
 
-                            select{
-                                padding: 3px 5px;
-                                margin: 10px 0;
-                            }
-
-                            button{
-                                padding: 7px 25px;
-                                border: none;
+                            li{
+                                list-style-type: none;
                                 cursor: pointer;
-                                background: #70FFD4;
-                            }
+                                padding: 10px 20px;
+                                border-bottom: 1px solid #E5E5E5;
 
-                            .arrow-up{
-                                position: absolute;
-                                right: 12px;
-                                top: -18px;
+                                &:last-of-type{
+                                    border: none;
+                                }
                             }
                         }
                     }
