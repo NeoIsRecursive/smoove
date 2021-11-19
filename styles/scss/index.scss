@@ -12,7 +12,7 @@ html{
 }
 
 body{
-    scroll-snap-type: y mandatory;
+    //scroll-snap-type: y mandatory;
     font-family: 'Open Sans', 'Inter', sans-serif;
 
     &.visible{
@@ -20,7 +20,7 @@ body{
             display: flex;
         }
 
-        position: fixed;
+        //position: fixed;
     }
 
     header{
@@ -351,6 +351,14 @@ body{
         }
 
         &.image-slider{
+            a{
+                text-align: right;
+                padding-top: 50px;
+                
+                button{
+                    cursor: pointer;
+                }
+            }
         }
     }
 
@@ -367,4 +375,9 @@ body{
             color: white;
         }
     }
+}
+
+.splide__arrow{
+    background: #70FFD4 !important;
+    opacity: 1 !important;
 }
