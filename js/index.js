@@ -2,6 +2,8 @@ let header = document.getElementById('header');
 let langButton = document.querySelector("#language");
 let langSaveButton = document.querySelector("#lang-save");
 let langBox = document.querySelector(".language-box");
+let hamburger = document.querySelector(".hamburger");
+let mobileNavClose = document.querySelector("#close");
 
 window.addEventListener('scroll', () => {
     if(window.scrollY > 50){
@@ -53,3 +55,11 @@ new Splide("#small-slideshow", {
     perMove: 1
     //width: "100%"
 }).mount();
+
+hamburger.addEventListener("click", () => {
+    document.body.classList.toggle("visible");
+})
+
+mobileNavClose.addEventListener("click", () => {
+    document.body.classList.toggle("visible");
+})
