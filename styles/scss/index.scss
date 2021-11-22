@@ -116,6 +116,13 @@ body{
                     &.nav-item-relative{
                         position: relative;
 
+                        svg{
+                            cursor: pointer;
+                            &:hover{
+                                color: var(--green);
+                            }
+                        }
+
                         .language-box{
                             position: absolute;
                             color: var(--black);
@@ -126,6 +133,7 @@ body{
                             cursor: auto;
                             display: none;
                             border-radius: 14px;
+                            border: 1px solid var(--black);
 
                             &.show{
                                 display: inline-block;
@@ -135,10 +143,29 @@ body{
                                 list-style-type: none;
                                 cursor: pointer;
                                 padding: 10px 20px;
-                                border-bottom: 1px solid #E5E5E5;
+                                border-bottom: 1px solid var(--grey);
+                                
+                                &:nth-child(1){
+                                    border-top-right-radius: 14px;
+                                    border-top-left-radius: 14px;
+                                }
+
+                                &:nth-child(3){
+                                    border-bottom-right-radius: 14px;
+                                    border-bottom-left-radius: 14px;
+                                }
 
                                 &:last-of-type{
                                     border: none;
+                                }
+
+                                &.lang-active{
+                                    font-weight: bold;
+                                    background: var(--green);
+                                }
+
+                                &:hover{
+                                    background: var(--green);
                                 }
                             }
                         }
@@ -155,7 +182,7 @@ body{
 
         &.hero{
             position: relative;
-            background-image: url("https://via.placeholder.com/2400x1600");
+            background-image: url("/public/img/hero.jpg");//url("https://via.placeholder.com/2400x1600");
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
