@@ -1,0 +1,47 @@
+:root{
+    --green: #70FFD4;
+    --pink: #FF4DF0;
+    --blue: #045DED;
+    --dark-blue: #1D269B;
+    --purple: #9D4DFF;
+
+    --grey: #E5E5E5;
+    --black: #000000;
+    --white: #FFFFFF;
+}
+
+button{
+    background: var(--green);
+    border: none;
+    padding: 7px 40px;
+    color: var(--black);
+    font-size: 20px;
+    cursor: pointer;
+
+    &:hover{
+        background: var(--black);
+        color: var(--green)
+    }
+}
+
+button.button-rounded{
+    border-radius: 61px;
+}
+
+.button-round{
+    background: var(--green);
+    color: var(--black);
+    border: 1px solid var(--black);
+    cursor: pointer;
+    border-radius: 100%;
+
+    &:hover{
+        border-color: var(--green);
+        color: var(--green);
+        background: var(--black);
+
+        svg{
+            color: var(--green);
+        }
+    }
+}
