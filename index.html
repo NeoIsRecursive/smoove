@@ -58,7 +58,7 @@
                     Enter the lottery to win your own Smoove.<br />
                     Enter the lottery to win your own Smoove.
                 </div>
-                <a href=""><button class="hero-button">Enter lottery</button></a>
+                <button class="hero-button open-modal">Enter lottery</button>
             </div>
             <a href="#next" class="down-button button-round">
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>
@@ -193,8 +193,31 @@
                     </div>
                 </div>
             </div>
-            <a href=""><button>Enter lottery</button></a>
+            <button class="open-modal">Enter lottery</button>
         </section>
+        <div class="modal">
+            <div class="back-btn" id="close-modal"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-left" class="svg-inline--fa fa-arrow-left fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"></path></svg></div>
+            <div class="modal-content">
+                <div class="title">
+                    <p>Fill in your name and email below to enter the lottery. The highest score wins the XC309 Smoove.</p>
+                </div>
+                <div class="form">
+                    <form>
+                        <label for="name">Name</label>
+                        <div class="input">
+                            <label for="name">Full Name</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <label for="email">Email</label>
+                        <div class="input">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <button type="submit">ENTER LOTTERY</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>

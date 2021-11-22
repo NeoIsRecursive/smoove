@@ -4,6 +4,8 @@ let langSaveButtons = document.querySelectorAll('.language-box ul li');
 let langBox = document.querySelector(".language-box");
 let hamburger = document.querySelector(".hamburger");
 let mobileNavClose = document.querySelector("#close");
+let openModalButtons = document.querySelectorAll(".open-modal");
+let closeModalButton = document.querySelector("#close-modal");
 
 window.addEventListener('scroll', () => {
     if(window.scrollY > 50){
@@ -76,4 +78,14 @@ hamburger.addEventListener("click", () => {
 
 mobileNavClose.addEventListener("click", () => {
     document.body.classList.toggle("visible");
+})
+
+openModalButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        document.body.classList.add("modal-open");
+    })
+})
+
+closeModalButton.addEventListener("click", () => {
+    document.body.classList.remove("modal-open");
 })
