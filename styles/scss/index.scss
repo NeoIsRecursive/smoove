@@ -13,7 +13,7 @@ html{
 
 body{
     //scroll-snap-type: y mandatory;
-    font-family: 'Open Sans', 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 
     &.visible{
         .mobile-nav-container{
@@ -432,9 +432,10 @@ body{
         }
 
         &.image-slider{
-            a{
-                text-align: right;
-                padding-top: 50px;
+            .open-modal-container{
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 50px;
                 
                 button{
                     cursor: pointer;
