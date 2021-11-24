@@ -182,7 +182,7 @@ body{
 
         &.hero{
             position: relative;
-            background-image: url("/public/img/hero.jpg");//url("https://via.placeholder.com/2400x1600");
+            background-image: url("https://via.placeholder.com/2400x1600");
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -258,7 +258,7 @@ body{
             justify-content: center;
             .container {
                 display:grid;
-                grid-template-areas: 'img1 bigText bigText''img2 info1 info2';
+                grid-template-areas: 'img1 bigText bigText''img1 info1 info2';
                 grid-auto-columns: auto 1fr 1fr;
                 align-items: center;
                 gap:1em;
@@ -269,9 +269,13 @@ body{
                     font-weight: 300;
                 }
 
-                img:last-of-type{
-                    grid-area:img2;
+                img{
+                    width: 470px; //TODO: UPDATE
+                    height: 470px;
+                    object-fit: cover;
+                    grid-area: img1;
                 }
+
                 h3 {
                     grid-area: bigText;
                     font-size: 3em;
