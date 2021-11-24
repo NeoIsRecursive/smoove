@@ -423,10 +423,16 @@ body{
                     //display: block;
                 }
 
-                p{
-                    font-size: 120px;
+                h2{
+                    font-size: 56px;
+                    font-weight: 600;
                     padding: 40px;
-                    color: white;
+                }
+
+                p{
+                    font-size: 20px;
+                    padding: 0 40px 40px 40px;
+                    font-weight: 300;
                 }
             }
         }
@@ -535,7 +541,7 @@ body{
 
         h1{
             font-weight: bold;
-            font-size: 120px;
+            font-size: 40px;
             color: white;
         }
     }

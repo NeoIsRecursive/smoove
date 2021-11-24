@@ -6,14 +6,14 @@
             &.small-slideshow{
 
                 .slideshow-container{
-                    padding: 0 !important;
+                    padding: 0;
 
                     #small-slideshow{
-                        display: none !important;
+                        display: none;
                     }
 
                     #mobile-slideshow{
-                        display: block !important;
+                        display: block;
                     }
                 }
             }
@@ -52,77 +52,59 @@
 }
 
 @media screen and (max-width: 768px) {
-    section{
-        &.half-split{
-            flex-direction: column !important;
-            
-            .split{
-                width: 100%;
-            }
-
-            div{
-                p{
-                    font-size: 120px !important;
+    body{
+        section{
+            &.half-split{
+                flex-direction: column;
+                
+                .split{
+                    width: 100%;
                 }
             }
-        }
 
-        &.three-split{
-            grid-template-columns: 1fr !important;
-            grid-template-rows: repeat(3, 1fr) !important;
-        }
+            &.three-split{
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 1fr);
+            }
 
-        &.big-img{
-            img{
-                padding: 0 !important;
-                width: 100% !important;
-                max-width: 100% !important;
+            &.big-img{
+                img{
+                    padding: 0;
+                    width: 100%;
+                    max-width: 100%;
+                }
             }
         }
     }
 }
 
 @media screen and (max-width: 920px) {
-    section{
-        &.half-split{
-            div{
-                p{
-                    font-size: 90px !important;
-                }
-            }
-        }
-    }
 }
 
 @media screen and (max-width: 730px) {
-    section{
-        &.half-split{
-            div{
-                p{
-                    font-size: 60px !important;
-                }
-            }
-        }
-    }
 }
 
 @media screen and(max-width: 640px) {
-    nav{
-        .hamburger{
-            display: inline-block !important;
+    html{
+        body{
+            nav{
+                .hamburger{
+                    display: inline-block;
+                }
+
+                .nav-list{
+                    display: none;
+                }
+            }
+
+            .image-slider{
+                display: none;
+            }
+
+            .down-button{
+                bottom: 10px;
+            }
         }
-
-        .nav-list{
-            display: none !important;
-        }
-    }
-
-    .image-slider{
-        display: none !important;
-    }
-
-    .down-button{
-        bottom: 10px !important;
     }
 }
 // #endregion

@@ -1,0 +1,31 @@
+/*.dark{ // BODY
+    background: var(--black);
+    color: var(--white);
+
+    .info-title{
+        color: var(--green);
+    }
+
+    
+    section.info .container .info-text-container{
+        color: var(--green);
+        border-color: var(--green);
+    }
+}*/
+
+@media (prefers-color-scheme: dark) {
+    body{
+        background: var(--black);
+        color: var(--white);
+
+        .info-title{
+            color: var(--green);
+        }
+
+        
+        section.info .container .info-text-container{
+            color: var(--green);
+            border-color: var(--green);
+        }
+    }
+}
