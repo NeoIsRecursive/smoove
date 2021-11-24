@@ -1,18 +1,40 @@
 // ==START TABLET==
 // #region
 @media screen and (max-width: 1200px) {
-    section{
-        &.small-slideshow{
+    body {
+        section{
+            &.small-slideshow{
 
-            .slideshow-container{
-                padding: 0 !important;
+                .slideshow-container{
+                    padding: 0 !important;
 
-                #small-slideshow{
-                    display: none !important;
+                    #small-slideshow{
+                        display: none !important;
+                    }
+
+                    #mobile-slideshow{
+                        display: block !important;
+                    }
                 }
-
-                #mobile-slideshow{
-                    display: block !important;
+            }
+            &.info{
+                .container{
+                    grid-template-areas:'bigText' 'info1' 'info2' 'img1' 'img2' ;
+                    
+                    .info-text-container {
+                        border-top: none;
+                        border-bottom: 1px solid var(--black);
+                        padding-bottom: 10px;
+                        .info-text{
+                            font-size: 1.5em;
+                        }
+                    }
+                    img {
+                        width:100%;
+                    }
+                    img:first-of-type{
+                        grid-area: img1;
+                    }
                 }
             }
         }
