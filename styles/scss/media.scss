@@ -1,5 +1,19 @@
 // ==START TABLET==
 // #region
+@media screen and (max-height: 750px){
+    body{
+        section{
+            &.hero{
+                a{
+                    &.down-button{
+                        bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1200px) {
     body {
         section{
