@@ -228,6 +228,7 @@ body{
             }
 
             .down-button{
+                display:none;
                 position: absolute;
                 bottom: 60px;
                 left: calc(50% - 25px);
