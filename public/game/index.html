@@ -1,0 +1,48 @@
+<style>
+    *{
+        padding:0;
+        margin:0;
+    }
+
+    body {
+        display: flex;
+        width: 100vw;
+        max-width: 100vw;
+        background-color: black;
+    }
+
+    .container{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        max-width: 100vw;
+    }
+
+    #background{
+        position: absolute;
+        top: 0;
+        left: 0;
+
+    }
+
+    #game{
+        position: absolute;
+        display: block;
+    }
+    #timer {
+        position: absolute;
+        z-index: 2;
+    }
+</style>
+<div class="container">
+    <video autoplay muted loop id="background">
+        <source src="images/background.mp4" type="video/mp4">
+    </video>
+    <canvas id="game" width="1000px" height="500px"></canvas>
+    <p id="timer"></p>
+</div>
+<script src="scripts/globals.js"></script>
+<script src="scripts/functions.js"></script>
+<script src="scripts/traffic.js"></script>
+<script src="scripts/player.js"></script>
+<script src="scripts/game.js"></script>

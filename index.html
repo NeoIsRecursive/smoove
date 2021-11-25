@@ -226,7 +226,7 @@
         </section>
         <div class="modal">
             <div class="back-btn" id="close-modal"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-left" class="svg-inline--fa fa-arrow-left fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"></path></svg></div>
-            <div class="modal-content">
+            <div class="modal-content form">
                 <div class="title">
                     <p>Fill in your name and email below to enter the lottery. The highest score wins the XC309 Smoove.</p>
                 </div>
@@ -245,6 +245,21 @@
                         <button type="submit">ENTER LOTTERY</button>
                     </form>
                 </div>
+            </div>
+            <!--game-->
+            <div class="modal-content game">
+                <div class="container">
+                    <video autoplay muted loop id="background">
+                        <source src="public/game/images/background.mp4" type="video/mp4">
+                    </video>
+                    <canvas id="game" width="1000px" height="500px"></canvas>
+                    <p id="timer"></p>
+                </div>
+                <script src="public/game/scripts/globals.js"></script>
+                <script src="public/game/scripts/functions.js"></script>
+                <script src="public/game/scripts/traffic.js"></script>
+                <script src="public/game/scripts/player.js"></script>
+                <script src="public/game/scripts/game.js"></script>
             </div>
         </div>
     </main>
