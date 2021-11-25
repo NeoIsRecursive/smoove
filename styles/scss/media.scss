@@ -101,13 +101,11 @@
 @media screen and(max-width: 640px) {
     html{
         body{
-
             section.hero{
                 .dark-mode{
                     display: none;
                 }
             }
-
             nav{
                 .hamburger{
                     display: inline-block;
@@ -121,9 +119,14 @@
             .image-slider{
                 display: none;
             }
-
-            .down-button{
-                bottom: 10px;
+            
+            section.hero{
+                a {
+                    &.down-button{
+                        bottom: 10px;
+                        display: flex;
+                    }
+                }
             }
         }
     }
