@@ -14,6 +14,7 @@ html{
 body{
     //scroll-snap-type: y mandatory;
     font-family: 'Open Sans', sans-serif;
+    transition: background-color .3s linear;
 
     &.dark section.hero .dark-mode p{
         #darkmode-off{
