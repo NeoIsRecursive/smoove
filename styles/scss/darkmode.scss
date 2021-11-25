@@ -1,4 +1,4 @@
-/*.dark{ // BODY
+.dark{ // BODY
     background: var(--black);
     color: var(--white);
 
@@ -11,9 +11,9 @@
         color: var(--green);
         border-color: var(--green);
     }
-}*/
+}
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
     body{
         background: var(--black);
         color: var(--white);
@@ -28,4 +28,4 @@
             border-color: var(--green);
         }
     }
-}
+}*/

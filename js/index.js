@@ -6,6 +6,7 @@ let hamburger = document.querySelector(".hamburger");
 let mobileNavClose = document.querySelector("#close");
 let openModalButtons = document.querySelectorAll(".open-modal");
 let closeModalButton = document.querySelector("#close-modal");
+let darkModeSwitches = document.querySelectorAll(".darkmode-switch");
 
 window.addEventListener('scroll', () => {
     if(window.scrollY > 50){
@@ -88,4 +89,10 @@ openModalButtons.forEach((btn) => {
 
 closeModalButton.addEventListener("click", () => {
     document.body.classList.remove("modal-open");
+})
+
+darkModeSwitches.forEach((darkModeSwitch) => {
+    darkModeSwitch.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+    })
 })
