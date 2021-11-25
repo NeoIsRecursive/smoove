@@ -101,6 +101,13 @@
 @media screen and(max-width: 640px) {
     html{
         body{
+
+            section.hero{
+                .dark-mode{
+                    display: none;
+                }
+            }
+
             nav{
                 .hamburger{
                     display: inline-block;
