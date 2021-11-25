@@ -3,7 +3,7 @@ class Player {
         this.speed = 650;
         this.x = 0;
         this.y = 0;
-        this.width = 150;
+        this.width = c.width * 0.15;
         this.height = 90;
         this.spriteWidth = 1536/3;
         this.spriteHeight = 300;
