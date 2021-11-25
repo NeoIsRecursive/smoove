@@ -609,6 +609,41 @@ body{
                     grid-area: 3 / 2 / 4 / 3;
                 }
             }
+            &.game{
+                display: none;
+                width: 100vw;
+                height: 100vh;
+                max-height: 100vh;
+                max-width: 100vw;
+                .container{
+                    position: relative;
+                    width: 100vw;
+                    height: 100vh;
+                    max-width: 100vw;
+                }
+            
+                #background{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+            
+                }
+            
+                #game{
+                    position: absolute;
+                    display: block;
+                }
+                #timer {
+                    position: absolute;
+                    top:50%;
+                    left:50%;
+                    transform: translate(-50%,-50%);
+                    z-index: 2;
+                    font-size: 5em;
+                    font-weight: 800;
+                    -webkit-text-stroke: 3px black;
+                }
+            }
         }
     }
 
