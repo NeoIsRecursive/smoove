@@ -55,7 +55,7 @@ let smallSlideshow = new Splide("#small-slideshow", {
     type: "loop",
     pagination: false,
     perPage: 2,
-    gap: "40%",
+    gap: "200px",
     fixedHeight: "100%",
     perMove: 1,
     //width: "100%",

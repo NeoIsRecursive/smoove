@@ -339,7 +339,7 @@ body{
                 }
 
                 h3 {
-                    grid-area: bigText;
+                    grid-area: bigText; 
                     font-size: 3em;
                 }
 
@@ -348,9 +348,6 @@ body{
                     height: 100%;
                     padding-top: 10px;
                     border-top: 1px solid var(--black);
-                    .info-text{
-
-                    }
                 }
             }
         }
