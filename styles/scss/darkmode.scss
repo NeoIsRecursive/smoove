@@ -11,6 +11,10 @@
         color: var(--green);
         border-color: var(--green);
     }
+
+    section.half-split .half-split-container div{
+        background: var(--black);
+    }
 }
 
 /*@media (prefers-color-scheme: dark) {

@@ -456,7 +456,7 @@ body{
             }
 
             h2{
-                padding-left: 55px;
+                padding: 55px;
             }
         }
 
@@ -498,15 +498,24 @@ body{
         &.half-split{
             h2{
                 padding-left: 55px;
-                padding-bottom: 35px
+                padding-bottom: 35px;
+                padding-top: 55px;
             }
             .half-split-container{
                 display: flex;
                 flex-direction: row;
+
+                @media screen and (max-width: 760px){
+                    flex-direction: column;
+                }
                 
                 div{
                     width: 50%;
-                    background-color: var(--black);
+                    background-color: var(--white);
+
+                    @media screen and (max-width: 760px) {
+                        width: 100%;
+                    }
 
                     .split-img{
                         width: 100%;
@@ -534,6 +543,7 @@ body{
                     button{
                         margin-left: 40px;
                         padding: 14px 70px;
+                        margin-bottom: 50px;
                     }
                 }
             }
@@ -684,7 +694,7 @@ body{
 
         .footer-content{
             &.copy{
-
+                color: white;
             }
 
             &.social{
