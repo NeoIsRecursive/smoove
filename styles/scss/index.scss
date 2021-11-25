@@ -16,7 +16,58 @@ body{
     font-family: 'Open Sans', sans-serif;
     transition: background-color .3s linear;
 
-    &.dark section.hero .dark-mode p{
+    .dark-mode{
+        display: inline-block;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+
+        p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            color: white;
+            user-select: none;
+
+            svg{
+                justify-content: center;
+                align-items: center;
+                padding-left: 15px;
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+
+                &#darkmode-off{
+                    display: inline-block;
+                }
+
+                &#darkmode-on{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .mobile-nav{
+        .dark-mode{
+            position: initial;
+
+            p{
+                svg{
+                    &#darkmode-off{
+                        display: inline-block;
+                    }
+    
+                    &#darkmode-on{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &.dark section.hero .dark-mode p, &.dark .mobile-nav .dark-mode p{
         #darkmode-off{
             display: none;
         }
@@ -197,6 +248,7 @@ body{
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            overflow: hidden;
 
             .hero-img{
                 width: 100%;
@@ -209,9 +261,9 @@ body{
                 position: absolute;
                 top: 50%;
                 left: 40px;
-                transform: translate(0, -50%);
+                transform: translate(0, -35%);
                 color: white;
-                text-transform: uppercase;
+                //text-transform: uppercase;
 
                 .hero-title{
                     font-size: 60px;
@@ -219,11 +271,16 @@ body{
                 }
 
                 .hero-text{
-                    padding-top: 20px;
+                    //padding-top: 20px;
+                    line-height: 30px;
+                    font-weight: 300;
+                    letter-spacing: 3%;
+                    font-size: 20px;
                 }
 
                 .hero-button{
                     margin-top: 30px;
+                    margin-bottom: 40px;
                 }
             }
 
@@ -250,36 +307,11 @@ body{
                 cursor: pointer;*/
             }
 
-            .dark-mode{
-                display: inline-block;
-                position: absolute;
-                bottom: 20px;
-                right: 20px;
-                p{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    text-transform: uppercase;
-                    color: white;
-                    user-select: none;
-
-                    svg{
-                        justify-content: center;
-                        align-items: center;
-                        padding-left: 15px;
-                        width: 50px;
-                        height: 50px;
-                        cursor: pointer;
-
-                        &#darkmode-off{
-                            display: inline-block;
-                        }
-
-                        &#darkmode-on{
-                            display: none;
-                        }
-                    }
-                }
+            .text-container{
+                background: rgba(0,0,0,.6);
+                width: max-content;
+                padding: 50px;
+                margin-top: 60px;
             }
         }
 
@@ -320,7 +352,7 @@ body{
                 }
 
                 h3 {
-                    grid-area: bigText;
+                    grid-area: bigText; 
                     font-size: 3em;
                 }
 
@@ -329,9 +361,6 @@ body{
                     height: 100%;
                     padding-top: 10px;
                     border-top: 1px solid var(--black);
-                    .info-text{
-
-                    }
                 }
             }
         }
