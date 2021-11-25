@@ -101,23 +101,26 @@
 @media screen and(max-width: 640px) {
     html{
         body{
-            nav{
-                .hamburger{
-                    display: inline-block;
+                nav{
+                    .hamburger{
+                        display: inline-block;
+                    }
+
+                    .nav-list{
+                        display: none;
+                    }
                 }
 
-                .nav-list{
+                .image-slider{
                     display: none;
                 }
-            }
-
-            .image-slider{
-                display: none;
-            }
-
-            .down-button{
-                bottom: 10px;
-                display: inline-block;
+            section.hero{
+                a {
+                    &.down-button{
+                        bottom: 10px;
+                        display: flex;
+                    }
+                }
             }
         }
     }
