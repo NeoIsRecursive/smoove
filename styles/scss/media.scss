@@ -36,8 +36,7 @@
                     grid-template-areas:'bigText' 'info1' 'info2' 'img1' ;
                     
                     .info-title {
-                        font-size: 1.6em;
-                        font-weight: bold;
+                        font-size: 1.8em;
                     }
 
                     .info-text-container {
@@ -92,6 +91,11 @@
                     }
                 }
             }
+
+            &.three-split{
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 1fr);
+            }
         }
     }
 }
@@ -105,11 +109,6 @@
                 .split{
                     width: 100%;
                 }
-            }
-
-            &.three-split{
-                grid-template-columns: 1fr;
-                grid-template-rows: repeat(3, 1fr);
             }
 
             &.big-img{
