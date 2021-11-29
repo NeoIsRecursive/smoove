@@ -678,13 +678,13 @@ body{
                     -webkit-text-stroke: 3px black;
                 }
 
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 850px) {
                     display: none;
                 }
             }
 
             &.form-content{
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 850px) {
                     display: none;
                 }
             }
@@ -693,7 +693,7 @@ body{
                 display: none;
                 padding: 20px;
 
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 850px) {
                     display: inline-block;
                 }
             }
