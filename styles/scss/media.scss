@@ -33,8 +33,13 @@
             }
             &.info{
                 .container{
-                    grid-template-areas:'bigText' 'info1' 'info2' 'img1' 'img2' ;
+                    grid-template-areas:'bigText' 'info1' 'info2' 'img1' ;
                     
+                    .info-title {
+                        font-size: 1.6em;
+                        font-weight: bold;
+                    }
+
                     .info-text-container {
                         border-top: none;
                         border-bottom: 1px solid var(--black);
@@ -43,12 +48,16 @@
                             font-size: 1.5em;
                         }
                     }
-                    img {
-                        width:100%;
-                    }
-                    img:first-of-type{
+                    
+                    img{
                         grid-area: img1;
+                        align-self: center;
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                        max-width: 100%;
                     }
+
                 }
             }
         }
@@ -62,6 +71,28 @@
     
     .big-img{
         padding: 50px 0;
+    }
+
+    body {
+        section {
+            &.hero {
+                .hero-meta {
+                    left:0;
+                    width: 100%;
+                    max-width: 100%;
+                    height: 100%;
+                    .hero-title{
+                        font-size: 50px;
+                        padding-left:10px;
+                    }
+                    .text-container {
+                        width: 100%;
+                        padding:15px;
+                        height: 100%;
+                    }
+                }
+            }
+        }
     }
 }
 
