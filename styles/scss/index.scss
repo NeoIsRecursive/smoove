@@ -414,7 +414,9 @@ body{
 
                     .grid-split-item{
                         border-bottom: 1px solid white;
-                        padding: 20px 30px;
+                        padding: 0 15px;
+                        display: flex;
+                        align-items: center;
 
                         &:last-of-type{
                             border: none;
