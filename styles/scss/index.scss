@@ -677,6 +677,25 @@ body{
                     font-weight: 800;
                     -webkit-text-stroke: 3px black;
                 }
+
+                @media screen and (max-width: 850px) {
+                    display: none;
+                }
+            }
+
+            &.form-content{
+                @media screen and (max-width: 850px) {
+                    display: none;
+                }
+            }
+
+            &.mobile{
+                display: none;
+                padding: 20px;
+
+                @media screen and (max-width: 850px) {
+                    display: inline-block;
+                }
             }
         }
     }

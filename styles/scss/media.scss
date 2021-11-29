@@ -36,8 +36,7 @@
                     grid-template-areas:'bigText' 'info1' 'info2' 'img1' ;
                     
                     .info-title {
-                        font-size: 1.6em;
-                        font-weight: bold;
+                        font-size: 1.8em;
                     }
 
                     .info-text-container {
@@ -92,6 +91,11 @@
                     }
                 }
             }
+
+            &.three-split{
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 1fr);
+            }
         }
     }
 }
@@ -107,11 +111,6 @@
                 }
             }
 
-            &.three-split{
-                grid-template-columns: 1fr;
-                grid-template-rows: repeat(3, 1fr);
-            }
-
             &.big-img{
                 img{
                     padding: 0;
@@ -123,7 +122,19 @@
     }
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 900px) {
+    html{
+        body{
+            section{
+                &.half-split{
+                    h2{
+                        padding-left: 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 730px) {
