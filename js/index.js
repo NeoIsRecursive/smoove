@@ -49,6 +49,16 @@ let slideshow = new Splide("#slideshow", {
     pagination: false
 }).mount();
 
+slideshow.on("move", () => {
+    const slideshowArrow = document.querySelector("#slideshow .splide__arrow--prev");
+
+    if(slideshow.index > 0){
+        slideshowArrow.style.display = "flex";
+    }else{
+        slideshowArrow.style.display = "none";
+    }
+})
+
 let smallSlideshow = new Splide("#small-slideshow", {
     heightRatio: 0.5,
     //cover: true,
@@ -62,6 +72,20 @@ let smallSlideshow = new Splide("#small-slideshow", {
     //fixedWidth: "60%"
 }).mount();
 
+smallSlideshow.on("move", () => {
+    const smallSlideshowArrow = document.querySelector("#small-slideshow .splide__arrow--prev");
+    console.log(smallSlideshowArrow)
+    console.log()
+
+    if(smallSlideshow.index > 0){
+        smallSlideshowArrow.style.display = "flex";
+    }else{
+        smallSlideshowArrow.style.display = "none";
+    }
+
+    console.log(smallSlideshow.index)
+})
+
 let mobileSlideshow = new Splide("#mobile-slideshow", {
     heightRatio: 0.5,
     cover: true,
@@ -72,6 +96,16 @@ let mobileSlideshow = new Splide("#mobile-slideshow", {
     width: "100%",
     height: "60vh"
 }).mount();
+
+mobileSlideshow.on("move", () => {
+    const mobileSlideshowArrow = document.querySelector("#mobile-slideshow .splide__arrow--prev");
+
+    if(mobileSlideshow.index > 0){
+        mobileSlideshowArrow.style.display = "flex";
+    }else{
+        mobileSlideshowArrow.style.display = "none";
+    }
+})
 
 hamburger.addEventListener("click", () => {
     document.body.classList.toggle("visible");

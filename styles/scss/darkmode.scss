@@ -9,7 +9,10 @@
     
     section.info .container .info-text-container{
         color: var(--green);
-        border-color: var(--green);
+        
+        .info-text{
+            border-color: var(--white);
+        }
     }
 
     section.half-split .half-split-container div{
