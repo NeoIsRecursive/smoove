@@ -21,3 +21,48 @@
 #mobile-slideshow{
     display: none;
 }
+
+.slideshow{
+    li{
+        div{
+            position: absolute;
+            display: inline-block;
+        }
+    }
+
+    .first-slide{
+        div{
+            top: 234px;
+            left: 373px;
+        }
+    }
+
+    .second-slide{
+        div{
+            top: 274px;
+            left: 116px;
+
+            p{
+                text-align: right;
+            }
+        }
+    }
+
+    .third-slide{
+        div{
+            top: 170px;
+            left: 224px;
+        
+            p{
+                text-align: right;
+            }
+        }
+    }
+
+    .fourth-slide{
+        div{
+            top: 100px;
+            left: 112px;
+        }
+    }
+}

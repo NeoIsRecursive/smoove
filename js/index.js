@@ -46,7 +46,7 @@ let slideshow = new Splide("#slideshow", {
     heightRatio: 0.5,
     width: "2000px",
     type: "loop",
-    pagination: false
+    pagination: true
 }).mount();
 
 slideshow.on("move", () => {
