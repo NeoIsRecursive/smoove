@@ -415,8 +415,8 @@ body{
                     position: absolute;
                     bottom: 50px;
                     left: 60px;
-                    font-size: 39px;
-                    font-weight: 600;
+                    font-size: 36px;
+                    font-weight: 300;
                     color: var(--green);
                 }
 
@@ -437,7 +437,7 @@ body{
                 }
 
                 &.grid-split{
-                    background: #0E1013;
+                    background: #000000;
                     color: white;
                     display: grid;
                     grid-template-columns: 1fr;
@@ -456,23 +456,20 @@ body{
                         p{
                             font-size: 32px;
                             color: var(--green);
-
-                            img{
-                                height: 21px;
-                                width: 21px;
-                            }
+                            font-weight: 300;
                         }
 
                         .grid-split-text{
-                            font-size: 80px;
+                            font-size: 100px;
                             font-weight: 300;
 
                             .small{
-                                font-size: 25px;
+                                font-size: 29px;
                             }
 
                             .converted{
                                 font-size: 20px;
+                                font-weight: 300;
                             }
                         }
                     }
@@ -532,7 +529,7 @@ body{
             h2{
                 padding-left: 55px;
                 padding-bottom: 35px;
-                padding-top: 55px;
+                padding-top: 46px;
             }
             .half-split-container{
                 display: flex;
@@ -752,13 +749,29 @@ body{
         padding-top: 140px;
 
         @media screen and (max-width: 600px){
-            flex-direction: column;
-            gap: 40px;
+            display: grid;
+            //gap: 40px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            padding: 45px 20px;
+
+            .contact, .information, .company{
+                padding: 10px 0;
+            }
+
+            .social{justify-content: flex-end;}
+
+            .copy { grid-area: 1 / 1 / 2 / 2; }
+            .contact { grid-area: 3 / 1 / 4 / 2; }
+            .information { grid-area: 4 / 1 / 5 / 2; }
+            .company { grid-area: 5 / 1 / 6 / 2; }
+            .social { grid-area: 1 / 2 / 2 / 3; }
         }
 
         .footer-content{
             &.copy{
                 color: white;
+                font-size: 20px;
             }
 
             &.social{
@@ -770,6 +783,7 @@ body{
                 color: var(--white);
                 text-decoration: none;
                 font-weight: 300;
+                font-size: 16px;
             }
         }
     }
