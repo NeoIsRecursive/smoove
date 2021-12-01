@@ -1,4 +1,5 @@
 # Smoove
+<img src="https://media.giphy.com/media/E8GfFH47PKeyI/giphy.gif" width="100%">
 
 **Build CSS for production**
 ```bash
@@ -9,16 +10,3 @@ npm run build
 ```bash
 npm run watch
 ```
-
-
-### Structure
-- index.html
-- styles
-    - css
-    - scss
-- public
-    - img
-    - fonts
-    - ...
-- script
-    - index.js
