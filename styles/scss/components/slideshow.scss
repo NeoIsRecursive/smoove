@@ -31,16 +31,48 @@
     }
 
     .first-slide{
+        background-position: right !important; //Overwriting splide.js style
+
         div{
             top: 50%;
-            left: 55%;
+            left: 5%;
+
+            @media screen and (min-width: 420px) {
+                left: 15%;
+            }
+
+            @media screen and (min-width: 500px) {
+                left: 30%;
+            }
+
+            @media screen and (min-width: 600px) {
+                left: 40%;
+            }
+
+            @media screen and (min-width: 720px) {
+                left: 50%;
+            }
+
+            @media screen and (min-width: 900px) {
+                left: 55%;
+            }
         }
     }
 
     .second-slide{
+        background-position: left !important;
+
         div{
             top: 60%;
-            left: 20%;
+            left: 35%;
+
+            @media screen and (min-width: 530px) {
+                left: 25%;
+            }
+
+            @media screen and (min-width: 750px) {
+                left: 20%;
+            }
 
             p{
                 text-align: right;
@@ -49,9 +81,19 @@
     }
 
     .third-slide{
+        background-position: left !important;
+
         div{
             top: 30%;
-            left: 30%;
+            left: 45%;
+
+            @media screen and (min-width: 570px) {
+                left: 35%;
+            }
+
+            @media screen and (min-width: 830px) {
+                left: 30%;
+            }
         
             p{
                 text-align: right;
@@ -62,7 +104,11 @@
     .fourth-slide{
         div{
             top: 20%;
-            left: 20%;
+            left: 15%;
+
+            @media screen and (min-width: 900px) {
+                left: 20%;
+            }
         }
     }
 }
