@@ -65,6 +65,7 @@ function drawExplosion(){
         if (count === this.length-1){
             clearInterval(explosionAnim);
             document.querySelector('.game').style.display = 'none';
+            document.querySelector('.after-game').style.display = 'block';
         }
         if (this.spritex >= this.image.width){
             this.spritex = 0;

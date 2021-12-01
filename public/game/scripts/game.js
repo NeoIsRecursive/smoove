@@ -37,7 +37,7 @@ bg.play();
 
 document.querySelector('form').addEventListener('submit', (x)=>{
     x.preventDefault();
-    document.querySelector('.form').style.display = 'none';
+    document.querySelector('.form-content').style.display = 'none';
     document.querySelector('.game').style.display = 'inline-block';
     startGame();
 })
