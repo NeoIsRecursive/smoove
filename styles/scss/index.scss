@@ -250,10 +250,6 @@ body{
 
         &.hero{
             position: relative;
-            background-image: url("https://via.placeholder.com/2400x1600");
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover;
             overflow: hidden;
 
             video{
@@ -273,23 +269,32 @@ body{
 
             .hero-meta{
                 position: absolute;
-                top: 50%;
                 left: 40px;
-                transform: translate(0, -35%);
                 color: white;
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                align-items: center;
+                place-items: center;
+                height: 100%;
                 //text-transform: uppercase;
 
                 .hero-title{
                     font-size: 100px;
                     font-weight: 800;
                 }
-
-                .hero-text{
-                    //padding-top: 20px;
-                    line-height: 30px;
-                    font-weight: 300;
-                    letter-spacing: 3%;
-                    font-size: 20px;
+                .text-container{
+                    background: rgba(0,0,0,.6);
+                    width: max-content;
+                    height: 100%;
+                    padding: 50px;
+                    margin-top: 60px;
+                    .hero-text{
+                        //padding-top: 20px;
+                        line-height: 30px;
+                        font-weight: 300;
+                        letter-spacing: 3%;
+                        font-size: 20px;
+                    }
                 }
 
                 .hero-button{
@@ -321,12 +326,6 @@ body{
                 cursor: pointer;*/
             }
 
-            .text-container{
-                background: rgba(0,0,0,.6);
-                width: max-content;
-                padding: 50px;
-                margin-top: 60px;
-            }
         }
 
         &.big-img{
