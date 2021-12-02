@@ -1,19 +1,5 @@
 // ==START TABLET==
 // #region
-@media screen and (max-height: 750px){
-    body{
-        section{
-            &.hero{
-                a{
-                    &.down-button{
-                        bottom: 10px;
-                    }
-                }
-            }
-        }
-    }
-}
-
 @media screen and (max-width: 1200px) {
     body {
         section{
@@ -64,6 +50,11 @@
     html body section.info .container .info-text-container .info-text{
         border-top: none;
     }
+
+    footer{
+        border-top: 1px solid white;
+        margin-top: 40px;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -83,9 +74,13 @@
                     top:0;
                     height: 100%;
                     margin-left:0;
+                    align-items: flex-end;
                     .hero-title{
-                        font-size: 50px;
-                        padding-left:10px;
+                        h1{
+                            font-size: 50px;
+                            padding-left:10px;
+                            padding-bottom: 40px;
+                        }
                     }
                     .text-container {
                         width: 100%;
@@ -161,7 +156,7 @@
                 }
             }
 
-            .image-slider{
+            section.image-slider .open-modal-container{
                 display: none;
             }
 
@@ -172,6 +167,11 @@
                         display: flex;
                     }
                 }
+            }
+
+            footer{
+                padding-top: 45px;
+                padding-bottom: 45px;
             }
         }
     }

@@ -279,9 +279,11 @@ body{
                 //text-transform: uppercase;
 
                 .hero-title{
-                    font-size: 100px;
-                    font-weight: 800;
-                    place-self: center;
+                    h1{
+                        font-size: 100px;
+                        font-weight: 800;
+                        place-self: center;
+                    }
                 }
                 .text-container{
                     background: rgba(0,0,0,.6);
@@ -765,7 +767,7 @@ body{
         padding-bottom: 140px;
         padding-top: 140px;
 
-        @media screen and (max-width: 600px){
+        @media screen and (max-width: 760px){
             display: grid;
             //gap: 40px;
             grid-template-columns: 1fr 1fr;
