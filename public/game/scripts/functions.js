@@ -32,13 +32,16 @@ function startGame(){
     let timeleft = 5;
     document.querySelector('#timer').innerText = timeleft;
     let startTimer = setInterval(function(){
-        timeleft--;
-        document.getElementById('timer').innerText = timeleft;
-        if(timeleft <= 0) {
+        if(timeleft === 'Go!') {
             clearInterval(startTimer);
             document.querySelector('#timer').style.display = 'none';
+            document.querySelector('#instruction').style.display = 'none';
             gameEngine();
         }
+        timeleft--;
+        if (timeleft === 0) timeleft = 'Go!';
+        document.getElementById('timer').innerText = timeleft;
+
     },1000);
 }
 
