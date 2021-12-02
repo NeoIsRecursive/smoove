@@ -270,17 +270,18 @@ body{
             .hero-meta{
                 position: absolute;
                 left: 40px;
+                top:8%;
                 color: white;
                 display: grid;
                 grid-template-rows: 1fr 1fr;
-                align-items: center;
-                place-items: center;
-                height: 100%;
+                // place-items: center;
+                height: 90%;
                 //text-transform: uppercase;
 
                 .hero-title{
                     font-size: 100px;
                     font-weight: 800;
+                    place-self: center;
                 }
                 .text-container{
                     background: rgba(0,0,0,.6);
