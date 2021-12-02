@@ -130,3 +130,9 @@ darkModeSwitches.forEach((darkModeSwitch) => {
         document.body.classList.toggle("dark");
     })
 })
+
+document.querySelector('.hero video').addEventListener('ended', () => {
+    console.log("Video ended")
+    this.load();
+    this.play();
+});
