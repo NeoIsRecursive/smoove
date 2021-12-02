@@ -118,6 +118,10 @@
         div{
             position: absolute;
             display: inline-block;
+
+            p{
+                color: white;
+            }
         }
     }
 
@@ -154,6 +158,20 @@
         div{
             top: 100px;
             left: 112px;
+        }
+    }
+}
+
+#slideshow{
+    li{
+        div{
+            bottom: 35px;
+            right: 35px;
+
+            p{
+                font-size: 56px;
+                color: white;
+            }
         }
     }
 }
