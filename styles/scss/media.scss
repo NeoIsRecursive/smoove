@@ -60,6 +60,10 @@
             }
         }
     }
+
+    html body section.info .container .info-text-container .info-text{
+        border-top: none;
+    }
 }
 
 @media screen and (max-width: 850px) {

@@ -361,10 +361,11 @@ body{
                 }
 
                 img{
-                    width: 400px; //TODO: UPDATE
+                    width: 400px;
                     height: 400px;
                     object-fit: cover;
                     grid-area: img1;
+                    object-position: bottom;
                 }
 
                 h3 {
